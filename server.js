@@ -1,6 +1,6 @@
 import http from 'http';
 import queryString from "query-string";
-
+//mon premier serveur Http
 const server = http.createServer((req, res) => {
     console.log(req.url);
     let reqInfo = { url: req.url, method: req.method, contentType: req.headers['content-type'] };
